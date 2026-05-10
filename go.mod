@@ -1,4 +1,4 @@
-module github.com/zerodha/kite-mcp-server/kc/registry
+module github.com/algo2go/kite-mcp-registry
 
 go 1.25.0
 
@@ -18,14 +18,16 @@ go 1.25.0
 // documented at commits 9ce2248 (kc/audit), 5982aff (kc/riskguard),
 // and 1cccfaf (kc/billing).
 require (
-	github.com/zerodha/kite-mcp-server v0.0.0-00010101000000-000000000000
 	github.com/algo2go/kite-mcp-broker v0.1.0 // indirect
 	github.com/algo2go/kite-mcp-isttz v0.1.0 // indirect
 	github.com/algo2go/kite-mcp-logger v0.1.0 // indirect
 	github.com/algo2go/kite-mcp-money v0.1.0 // indirect
 )
 
+require github.com/algo2go/kite-mcp-alerts v0.1.0
+
 require (
+	github.com/algo2go/kite-mcp-domain v0.1.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1 // indirect
 	github.com/gocarina/gocsv v0.0.0-20180809181117-b8c38cb1ba36 // indirect
@@ -38,14 +40,11 @@ require (
 	github.com/zerodha/gokiteconnect/v4 v4.4.0 // indirect
 	golang.org/x/crypto v0.48.0 // indirect
 	golang.org/x/exp v0.0.0-20251023183803-a4bb9ffd2546 // indirect
+	golang.org/x/mod v0.32.0 // indirect
+	golang.org/x/sync v0.19.0 // indirect
 	golang.org/x/sys v0.41.0 // indirect
-	golang.org/x/tools v0.41.0 // indirect
 	modernc.org/libc v1.67.6 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.11.0 // indirect
 	modernc.org/sqlite v1.46.1 // indirect
-)
-
-replace (
-	github.com/zerodha/kite-mcp-server => ../..
 )
